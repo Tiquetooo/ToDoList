@@ -1,0 +1,17 @@
+<div class="task-card">
+    <div class="text-container">
+        <h3>{{ task.title }}</h3>
+        <p>{{ task.description }}</p>
+        <p>User: {{ task.userId }}</p>
+    </div>
+    <div class="button-container">
+        <div class="button">
+            <button [routerLink]="['/edit/'+task.id]">Modifier</button>
+        </div>
+        <div class="button">
+            <button (click)="deleteTask()">Supprimer</button>
+        </div>
+    </div>
+</div>
+
+<!-- (click)="onViewFaceSnap()" -->

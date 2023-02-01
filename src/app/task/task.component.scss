@@ -1,0 +1,54 @@
+.task-card {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 10px;
+    box-shadow: lightgray 4px 4px 20px;
+    display: flex;
+    img {
+      width: 100%;
+    }
+    h3 {
+      margin: 5px;
+      width: 100%;
+    }
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      margin: 5px;
+    }
+    button {
+      background-color: transparent;
+      box-sizing: border-box;
+      display: inline-flexbox;
+      padding: 5px 10px;
+      border: none;
+      box-shadow: lightgray 3px 3px 7px;
+      margin-left: 20px;
+      outline: none;
+      font-size: 14px;
+      font-weight: 500;
+      &:active {
+        transform: translate(1px, 1px);
+        box-shadow: lightgray 0 0 5px;
+      }
+    }
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .button-list {
+      display: inline-flex;
+     // justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+    }
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 50%;
+    }
+}

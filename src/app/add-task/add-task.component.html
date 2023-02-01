@@ -1,0 +1,13 @@
+<div class="task-card">
+    <div class="text-container">
+        <p>Titre</p>
+        <input type="text"  [(ngModel)]="task.title" />
+        <p>Description</p>
+        <input type="text"  [(ngModel)]="task.description" />
+        <p>User ID</p>
+        <input type="text"  [(ngModel)]="task.userId" />
+    </div>
+    <div class="button">
+            <button (click)="addTask()">Valider</button>
+    </div>
+</div>
